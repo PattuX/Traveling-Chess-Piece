@@ -30,6 +30,13 @@ General rules:
 
 * move the piece according to the rules such that it always picks the lowest square it can reach but has not visited yet
 
+
+## Implementing other pieces
+
 The initial Trapped Knight of course used a Knight's movement. This script leaves a possibility to extend this to any kind of piece. Add your own pieces in the ```get_moves(iy, ix)``` function by returning all possible (relative) moves given that the piece is on field ```(ix, iy)```.
 
 The pre-implemented pieces ```ROOK```, ```BISHOP``` and ```QUEEN``` can move like the corresponding chess pieces, but the size of their move *must* be equal to the number of digits of the field it is on, plus one. E.g., a Rook on field 77 has to move exactly 3 squares, either up, down, left, or right.
+
+The Knight is known to become trapped. The implemented Rook and Bishop become trapped, too. I don't know what happens to the Queen in the long run.
+
+The piece, for now has to be set manually in the source code in line 6. Similarly for the maximum number of steps, in line 7.
