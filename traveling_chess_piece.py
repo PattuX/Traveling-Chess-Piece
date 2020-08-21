@@ -63,8 +63,6 @@ def get_moves(iy, ix):
 
 
 def get_next(iy, ix):
-    """Get the position of the next square visited by the knight."""
-
     next_sq = []
     
     for dy, dx in get_moves(iy, ix):
