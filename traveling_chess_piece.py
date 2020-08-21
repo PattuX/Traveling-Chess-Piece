@@ -121,5 +121,5 @@ cmap = ListedColormap(['#aaaaaa', 'white'])
 
 ax.imshow(board, extent=[xmin-0.5,xmax+0.5,ymin-0.5,ymax+0.5], cmap=cmap)
 
-plt.savefig('traavelling-chess-piece.png', dpi=DPI)
+plt.savefig('travelling-chess-piece.png', dpi=DPI)
 plt.show()
